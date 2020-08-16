@@ -1,18 +1,23 @@
-<br>
-<table class="table" style="width: 500px" border="1">
-  <tr>
-    <td colspan="2"><b>Gestion Ecole</b></td>
-  </tr>
-  <tr>
-    <td>Login</td>
-    <td><input type="text" placeholder="Login" [(ngModel)]="user.login"></td>
-  </tr>
-  <tr>
-    <td>Password</td>
-    <td><input type="password" placeholder="Password" [(ngModel)]="user.password"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><button class="btn btn-success" (click)="doAuth()">Valider</button></td>
-  </tr>
-</table>
+<div class="row">
+  <div class="col"></div>
+  <div class="col">
+      <table class="table" style="width: 500px" border="1">
+        <tr>
+          <td colspan="2"><b>Gestion Ecole</b></td>
+        </tr>
+        <tr>
+          <td>Login</td>
+          <td><input type="text" placeholder="Login" [(ngModel)]="user.login"></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" placeholder="Password" [(ngModel)]="user.password"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button class="btn btn-success" (click)="doAuth()">Valider</button></td>
+        </tr>
+      </table>
+  </div>
+  <div class="col"></div>
+</div>
