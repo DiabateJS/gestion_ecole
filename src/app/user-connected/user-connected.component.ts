@@ -9,7 +9,7 @@ import {User} from '../user-auth/user';
 export class UserConnectedComponent implements OnInit {
 
   private _user: User;
-  private _connectedDate: Date;
+  connectedDate: Date;
 
   constructor() {
   }
@@ -23,16 +23,8 @@ export class UserConnectedComponent implements OnInit {
     return this._user;
   }
 
-  @Input()
-  set connectedDate(value: Date){
-    this._connectedDate = value;
-  }
-
-  get connectedDate(): Date{
-    return this._connectedDate;
-  }
-
   ngOnInit(): void {
+    this.connectedDate = new Date();
   }
 
 }
