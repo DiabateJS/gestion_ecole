@@ -5,14 +5,14 @@
   </tr>
   <tr>
     <td>Login</td>
-    <td><input type="text" placeholder="Login"></td>
+    <td><input type="text" placeholder="Login" [(ngModel)]="user.login"></td>
   </tr>
   <tr>
     <td>Password</td>
-    <td><input type="password" placeholder="Password"></td>
+    <td><input type="password" placeholder="Password" [(ngModel)]="user.password"></td>
   </tr>
   <tr>
     <td></td>
-    <td><button class="btn btn-success">Valider</button></td>
+    <td><button class="btn btn-success" (click)="doAuth()">Valider</button></td>
   </tr>
 </table>
