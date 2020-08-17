@@ -1,1 +1,47 @@
-<p>filieres works!</p>
+<app-user-connected></app-user-connected>
+<app-menu-bar></app-menu-bar>
+<br>
+<div class="row">
+  <div class="col">
+    <h6>Liste des filières</h6><br>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <th>#</th>
+        <th>Code</th>
+        <th>Libelle</th>
+        <th>Actions</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let filiere of filieres">
+          <td>{{filiere.id}}</td>
+          <td>{{filiere.code}}</td>
+          <td>{{filiere.libelle}}</td>
+          <td><a href="#">Afficher</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col">
+    <h6 class="text-center">Information filière</h6>
+    <form>
+      <div class="form-group">
+        <label for="idFiliere">Id</label>
+        <input type="text" class="form-control" id="idFiliere" readonly>
+      </div>
+      <div class="form-group">
+        <label for="codeFiliere">Code</label>
+        <input type="text" class="form-control" id="codeFiliere">
+      </div>
+      <div class="form-group">
+        <label for="libelleFiliere">Libelle</label>
+        <input type="text" class="form-control" id="libelleFiliere">
+      </div>
+      <div class="form-group">
+        <label for="descriptionFiliere">Description</label>
+        <textarea class="form-control" id="descriptionFiliere" rows="3"></textarea>
+      </div>
+      <button class="btn btn-primary float-right">Enregistrer</button>
+      <button class="btn btn-danger float-right">Supprimer</button>
+    </form>
+  </div>
+</div>
