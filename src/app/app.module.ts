@@ -11,6 +11,8 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { FiliereComponent } from './filiere/filiere.component';
 import { FilieresComponent } from './filieres/filieres.component';
 import { UserConnectedComponent } from './user-connected/user-connected.component';
+import { EnseignantsComponent } from './enseignants/enseignants.component';
+import { EnseignantComponent } from './enseignant/enseignant.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { UserConnectedComponent } from './user-connected/user-connected.componen
     MenuBarComponent,
     FiliereComponent,
     FilieresComponent,
-    UserConnectedComponent
+    UserConnectedComponent,
+    EnseignantsComponent,
+    EnseignantComponent
   ],
   imports: [
     BrowserModule,
