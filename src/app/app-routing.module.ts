@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {UserAuthComponent} from './user-auth/user-auth.component';
 import {AccueilComponent} from './accueil/accueil.component';
 import {FilieresComponent} from './filieres/filieres.component';
+import {FiliereComponent} from './filiere/filiere.component';
 
 
 const routes: Routes = [
@@ -21,8 +22,11 @@ const routes: Routes = [
   {
     path:'filieres',
     component: FilieresComponent
+  },
+  {
+    path:'filiere/:id',
+    component: FiliereComponent
   }
-
 ];
 
 @NgModule({
