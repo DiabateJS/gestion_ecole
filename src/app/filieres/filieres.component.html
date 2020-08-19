@@ -1,4 +1,3 @@
-<app-user-connected></app-user-connected>
 <app-menu-bar></app-menu-bar>
 <br>
 <div class="row">
@@ -16,7 +15,7 @@
           <td>{{filiere.id}}</td>
           <td>{{filiere.code}}</td>
           <td>{{filiere.libelle}}</td>
-          <td><a href="#">Afficher</a></td>
+          <td><a [routerLink]="['/filiere',filiere.id]">Afficher</a></td>
         </tr>
       </tbody>
     </table>
