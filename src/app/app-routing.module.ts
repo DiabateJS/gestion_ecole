@@ -4,6 +4,8 @@ import {UserAuthComponent} from './user-auth/user-auth.component';
 import {AccueilComponent} from './accueil/accueil.component';
 import {FilieresComponent} from './filieres/filieres.component';
 import {FiliereComponent} from './filiere/filiere.component';
+import {EnseignantsComponent} from './enseignants/enseignants.component';
+import {EnseignantComponent} from './enseignant/enseignant.component';
 
 
 const routes: Routes = [
@@ -26,6 +28,14 @@ const routes: Routes = [
   {
     path:'filiere/:id',
     component: FiliereComponent
+  },
+  {
+    path:'enseignants',
+    component: EnseignantsComponent
+  },
+  {
+    path:'enseignant/:id',
+    component: EnseignantComponent
   }
 ];
 

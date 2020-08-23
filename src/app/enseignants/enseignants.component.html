@@ -1,1 +1,30 @@
-<p>enseignants works!</p>
+<app-menu-bar></app-menu-bar>
+<div class="row">
+  <div class="col">
+    <br>
+    <h4 class="text-center">Nos enseignants</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <td>Matricule</td>
+          <td>Nom</td>
+          <td>Prenom</td>
+          <td>Action</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ens of enseignants">
+          <td>{{ens.getMatricule()}}</td>
+          <td>{{ens.getNom()}}</td>
+          <td>{{ens.getPrenom()}}</td>
+          <td><a [routerLink]="['/enseignant',ens.getId()]">Afficher</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col"></div>
+</div>
