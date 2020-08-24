@@ -18,10 +18,10 @@
       </thead>
       <tbody>
         <tr *ngFor="let ens of enseignants">
-          <td>{{ens.getMatricule()}}</td>
-          <td>{{ens.getNom()}}</td>
-          <td>{{ens.getPrenom()}}</td>
-          <td><a [routerLink]="['/enseignant',ens.getId()]">Afficher</a></td>
+          <td>{{ens.matricule}}</td>
+          <td>{{ens.nom}}</td>
+          <td>{{ens.prenom}}</td>
+          <td><a [routerLink]="['/enseignant',ens.id]">Afficher</a></td>
         </tr>
       </tbody>
     </table>

@@ -11,31 +11,4 @@ export class Matiere {
     this.description = description;
   }
 
-  getId(): number{
-    return this.id;
-  }
-
-  getCode(): string{
-    return '';
-  }
-
-  setCode(value: string){
-    this.code = value;
-  }
-
-  getLibelle(): string{
-    return this.libelle;
-  }
-
-  setLibelle(value: string){
-    this.libelle = value;
-  }
-
-  getDescription(): string{
-    return this.description;
-  }
-
-  setDescription(value: string){
-    this.description = value;
-  }
 }
